@@ -5,7 +5,7 @@
 [![MIT license](https://img.shields.io/npm/l/foxrunner)](https://opensource.org/license/mit)
 ![Types included](https://img.shields.io/badge/types-included-blue)
 
-[Setup](#install) · [API reference](#runtime-surfaces) · [Comparisons](#compare) · [Source](https://github.com/pooriaarab/foxrunner)
+[Setup](#install) · [API reference](#runtime-surfaces) · [Comparisons](#compare) · [Source](https://github.com/itsryanarmani/foxrunner)
 
 foxrunner is an open-source task runner for Firefox extension authors and browser-agent developers.
 It saves named step records, retries failed steps, and wakes scheduled work through browser alarms.
@@ -219,7 +219,7 @@ To inspect the demo manually, run `pnpm build:ext` and load `dist-ext/manifest.j
 ## Status
 
 Version 0.1.3 is an early release. APIs and record behavior can change during the 0.x series.
-Report problems through [GitHub issues](https://github.com/pooriaarab/foxrunner/issues).
+Report problems through [GitHub issues](https://github.com/itsryanarmani/foxrunner/issues).
 Public case studies are not yet published in this repository.
 
 ## FAQ
