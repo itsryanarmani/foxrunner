@@ -7,9 +7,9 @@
   "author": "Pooria Arab",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pooriaarab/foxrunner.git"
+    "url": "git+https://github.com/itsryanarmani/foxrunner.git"
   },
-  "homepage": "https://github.com/pooriaarab/foxrunner#readme",
+  "homepage": "https://github.com/itsryanarmani/foxrunner#readme",
   "packageManager": "pnpm@11.10.0",
   "engines": {
     "node": ">=24"

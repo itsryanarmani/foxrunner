@@ -29,7 +29,7 @@ const TEST_FILE = /(^|[/._-])(e2e|fixtures?|tests?|spec)([/._-]|$)/i;
 const meta = JSON.parse(readFileSync(META_FILE, "utf8"));
 const manifest = JSON.parse(readFileSync("extension/manifest.json", "utf8"));
 const pkg = JSON.parse(readFileSync("package.json", "utf8"));
-const repo = /github\.com\/pooriaarab\/([^/.]+)/.exec(pkg.repository?.url ?? "")?.[1];
+const repo = /github\.com\/itsryanarmani\/([^/.]+)/.exec(pkg.repository?.url ?? "")?.[1];
 
 function en(field) {
   return typeof field === "object" && field !== null ? field["en-US"] : undefined;
@@ -58,9 +58,9 @@ function check() {
   if ((cats ?? []).length > 1 && cats.includes("other")) fail('AMO refuses "other" with another category');
   if (meta.version?.license !== "MIT") fail('version.license must be "MIT"');
   if (!meta.version?.approval_notes) fail("version.approval_notes must tell reviewers how to build and use the add-on");
-  if (!repo) fail("package.json repository.url must point to github.com/pooriaarab/<repo>");
-  if (en(meta.homepage) !== `https://github.com/pooriaarab/${repo}`) fail(`homepage must be https://github.com/pooriaarab/${repo}`);
-  if (en(meta.support_url) !== `https://github.com/pooriaarab/${repo}/issues`) fail(`support_url must be https://github.com/pooriaarab/${repo}/issues`);
+  if (!repo) fail("package.json repository.url must point to github.com/itsryanarmani/<repo>");
+  if (en(meta.homepage) !== `https://github.com/itsryanarmani/${repo}`) fail(`homepage must be https://github.com/itsryanarmani/${repo}`);
+  if (en(meta.support_url) !== `https://github.com/itsryanarmani/${repo}/issues`) fail(`support_url must be https://github.com/itsryanarmani/${repo}/issues`);
   if (meta.slug !== undefined && !/^[\p{L}\p{N}_~-]+$/u.test(meta.slug)) fail("slug may hold only letters, numbers, -, _ and ~");
   const seen = {
     "manifest name": manifest.name,
